@@ -7,3 +7,6 @@
 [submodule ".vim/pack/pug/start/vim-pug"]
 	path = .vim/pack/pug/start/vim-pug
 	url = git@github.com:digitaltoad/vim-pug.git
+[submodule ".vim/pack/coc/start/coc.nvim"]
+	path = .vim/pack/coc/start/coc.nvim
+	url = git@github.com:neoclide/coc.nvim.git
