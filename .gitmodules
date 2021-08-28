@@ -4,3 +4,6 @@
 [submodule ".vim/pack/css-color/start/vim-css-color"]
 	path = .vim/pack/css-color/start/vim-css-color
 	url = git@github.com:ap/vim-css-color.git
+[submodule ".vim/pack/pug/start/vim-pug"]
+	path = .vim/pack/pug/start/vim-pug
+	url = git@github.com:digitaltoad/vim-pug.git
