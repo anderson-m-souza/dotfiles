@@ -1,3 +1,6 @@
 [submodule ".vim/pack/svelte/start/vim-svelte-plugin"]
 	path = .vim/pack/svelte/start/vim-svelte-plugin
 	url = git@github.com:leafOfTree/vim-svelte-plugin.git
+[submodule ".vim/pack/css-color/start/vim-css-color"]
+	path = .vim/pack/css-color/start/vim-css-color
+	url = git@github.com:ap/vim-css-color.git
