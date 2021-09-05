@@ -10,6 +10,15 @@
     " Set to no backup files.
     set nobackup
 
+    " Enable true-color
+    set termguicolors
+
+    " Enable Gruvbox theme
+    autocmd vimenter * ++nested colorscheme gruvbox
+
+    " Set Gruvbox dark mode
+    set background=dark
+
     " Scroll before reaching the end of the file.
     set scrolloff=8
 
@@ -31,9 +40,6 @@
 
     " Highlight cursor line underneath the cursor horizontally.
     set cursorline
-
-    " Set theme.
-    colorscheme codedark
 
     " Set shift width to 4 spaces.
     set shiftwidth=4
