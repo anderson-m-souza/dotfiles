@@ -10,3 +10,6 @@
 [submodule ".vim/pack/coc/start/coc.nvim"]
 	path = .vim/pack/coc/start/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
+[submodule ".vim/pack/gruvbox/start/gruvbox"]
+	path = .vim/pack/gruvbox/start/gruvbox
+	url = git@github.com:morhetz/gruvbox.git
