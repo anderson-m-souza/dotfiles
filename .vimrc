@@ -13,6 +13,8 @@
     " Enable true-color
     set termguicolors
 
+    let g:gruvbox_contrast_dark = "hard"
+
     " Enable Gruvbox theme
     autocmd vimenter * ++nested colorscheme gruvbox
 
