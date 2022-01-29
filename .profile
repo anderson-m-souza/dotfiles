@@ -8,27 +8,51 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-# xdg evironment variables
+
+# XDG ENVIRONMENT VARIABLES
+
+# config
 export XDG_CONFIG_HOME="$HOME/.config"
+# cache
 export XDG_CACHE_HOME="$HOME/.cache"
+# data
 export XDG_DATA_HOME="$HOME/.local/share"
+# state
 export XDG_STATE_HOME="$HOME/.local/state"
 
-# organizing ~/
+
+# ORGANIZING ~/
+
+# bash history file
 export HISTFILE="$XDG_STATE_HOME/bash/history"
+# npm
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+# pass
 export PASSWORD_STORE_DIR="$XDG_CONFIG_HOME/password-store"
+# when
 export WHEN_CONFIG_HOME="$HOME/.config/when"
-# change ~/.java to ~/.config/java (not working)
+# change ~/.java to $XDG_CONFIG_HOME/java
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+# less history file
 export LESSHISTFILE=-
+# dr racket
 export PLTUSERHOME="$XDG_DATA_HOME/racket"
+# wget
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
+# pipewire
 export PIPEWIRE_CONFIG_DIR="$XDG_CONFIG_HOME/pipewire"
+# change ~/.python_history to $XDG_STATE_HOME/python/history
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc.py"
+# postgresql
+export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
+export PSQL_HISTORY="$XDG_STATE_HOME/psql_history"
+export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
+export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
+
 
 # set vim as default text editor
 export EDITOR='vim'
+
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
@@ -38,10 +62,12 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
