@@ -3,7 +3,7 @@ alias tsm='transmission-remote'
 alias tsm-watch='watch -t -n 3 transmission-remote -l'
 
 # dotfiles configuration
-alias config='/usr/bin/git --git-dir=/home/and/.cfg --work-tree=/home/and'
+alias config='/usr/bin/git --git-dir="$HOME/.cfg" --work-tree=$HOME'
 
 # change when's options
 when() {
