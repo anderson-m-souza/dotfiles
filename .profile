@@ -28,7 +28,7 @@ export HISTFILE="$XDG_STATE_HOME/bash/history"
 # npm
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 # pass
-export PASSWORD_STORE_DIR="$XDG_CONFIG_HOME/password-store"
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
 # when
 export WHEN_CONFIG_HOME="$HOME/.config/when"
 # change ~/.java to $XDG_CONFIG_HOME/java
