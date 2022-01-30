@@ -1,6 +1,6 @@
 future = 7
 past = 0
-calendar = /home/and/.config/when/calendar
+calendar = ~/.config/when/calendar
 editor = vim
 header = 0
 calendar_today_style = bold,fggreen
