@@ -4,10 +4,6 @@
 # see /usr/share/doc/bash/examples/startup-files for examples.
 # the files are located in the bash-doc package.
 
-# the default umask is set in /etc/profile; for setting the umask
-# for ssh logins, install and configure the libpam-umask package.
-#umask 022
-
 
 # XDG ENVIRONMENT VARIABLES
 
@@ -35,12 +31,8 @@ export WHEN_CONFIG_HOME="$HOME/.config/when"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 # less history file
 export LESSHISTFILE=-
-# dr racket
-export PLTUSERHOME="$XDG_DATA_HOME/racket"
 # wget
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
-# pipewire
-export PIPEWIRE_CONFIG_DIR="$XDG_CONFIG_HOME/pipewire"
 # change ~/.python_history to $XDG_STATE_HOME/python/history
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc.py"
 # postgresql
@@ -58,7 +50,7 @@ export EDITOR='vim'
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+        . "$HOME/.bashrc"
     fi
 fi
 
