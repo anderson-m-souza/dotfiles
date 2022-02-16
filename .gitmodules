@@ -1,12 +1,12 @@
-[submodule ".vim/pack/css-color/start/vim-css-color"]
-	path = .vim/pack/css-color/start/vim-css-color
+[submodule ".config/vim/pack/css-color/start/vim-css-color"]
+	path = .config/vim/pack/css-color/start/vim-css-color
 	url = git@github.com:ap/vim-css-color.git
     ignore = dirty
-[submodule ".vim/pack/coc/start/coc.nvim"]
-	path = .vim/pack/coc/start/coc.nvim
+[submodule ".config/vim/pack/coc/start/coc.nvim"]
+	path = .config/vim/pack/coc/start/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
     ignore = dirty
-[submodule ".vim/pack/gruvbox/start/gruvbox"]
-	path = .vim/pack/gruvbox/start/gruvbox
+[submodule ".config/vim/pack/gruvbox/start/gruvbox"]
+	path = .config/vim/pack/gruvbox/start/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
     ignore = dirty
