@@ -1,6 +1,6 @@
 [submodule ".config/vim/pack/css-color/start/vim-css-color"]
 	path = .config/vim/pack/css-color/start/vim-css-color
-	url = git@github.com:ap/vim-css-color.git
+	url = https://github.com/ap/vim-css-color
     ignore = dirty
 [submodule ".config/vim/pack/coc/start/coc.nvim"]
 	path = .config/vim/pack/coc/start/coc.nvim
