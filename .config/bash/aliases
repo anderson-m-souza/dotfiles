@@ -1,3 +1,12 @@
+# colors
+alias ls='ls --color=auto'
+alias tree='tree -C'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias diff='diff --color=auto'
+alias ip='ip --color=auto'
+
 # transmission daemon
 alias tsm='transmission-remote'
 alias tsm-watch='watch -t -n 3 transmission-remote -l'
@@ -20,3 +29,9 @@ when() {
         command $full_path "$@"
     fi
 }
+
+# yarn (this doesn't seem to work)
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+
+# startx doesn't respect XINITRC and XSERVERRC yet
+alias startx='startx "$XINITRC" -- "$XSERVERRC" vt1'
