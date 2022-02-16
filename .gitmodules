@@ -4,7 +4,7 @@
     ignore = dirty
 [submodule ".config/vim/pack/coc/start/coc.nvim"]
 	path = .config/vim/pack/coc/start/coc.nvim
-	url = git@github.com:neoclide/coc.nvim.git
+	url = https://github.com/neoclide/coc.nvim
     ignore = dirty
 [submodule ".config/vim/pack/gruvbox/start/gruvbox"]
 	path = .config/vim/pack/gruvbox/start/gruvbox
