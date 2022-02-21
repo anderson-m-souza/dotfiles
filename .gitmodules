@@ -10,3 +10,6 @@
 	path = .config/vim/pack/gruvbox/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
     ignore = dirty
+[submodule ".config/vim/pack/nerdtree/start/nerdtree"]
+	path = .config/vim/pack/nerdtree/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
