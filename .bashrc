@@ -17,7 +17,13 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # Prompt
-PS1='[\[\033[01;34m\]\w\[\033[00m\]]\$ '
+bblue="\[\033[01;34m\]"
+bgreen="\[\033[01;32m\]"
+yellow="\[\033[00;33m\]"
+reset="\[\033[00;00m\]"
+PS1="${yellow}┌⎯⎯(${bgreen}\u@\h${yellow})⎯[${bblue}\w${yellow}]\n${yellow}└⎯${bgreen}\$${reset} "
+PROMPT_COMMAND="export PROMPT_COMMAND=echo"
+alias clear="clear; export PROMPT_COMMAND='export PROMPT_COMMAND='echo''"
 
 if [ -f "$XDG_CONFIG_HOME/bash/aliases" ]; then
     . "$XDG_CONFIG_HOME/bash/aliases"
