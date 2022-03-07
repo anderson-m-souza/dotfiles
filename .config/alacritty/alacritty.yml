@@ -46,8 +46,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 1
-  #  y: 0
+    x: 2
+    y: 3
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -156,14 +156,14 @@ font:
     #style: Bold Italic
 
   # Point size
-  #size: 11.0
+  size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
   offset:
     x: 0
-    y: 2
+    y: 1
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
@@ -286,14 +286,14 @@ colors:
 
   # Bright colors
   bright:
-    black:   '#928374'
-    red:     '#fb4934'
-    green:   '#b8bb26'
-    yellow:  '#fabd2f'
-    blue:    '#83a598'
-    magenta: '#d3869b'
-    cyan:    '#8ec07c'
-    white:   '#ebdbb2'
+    black:   *gruvbox_dark_bg
+    red:     '#cc241d'       
+    green:   '#98971a'       
+    yellow:  '#d79921'       
+    blue:    '#458588'       
+    magenta: '#b16286'       
+    cyan:    '#689d6a'       
+    white:   '#a89984'       
 
   # Dim colors
   #
@@ -384,7 +384,7 @@ cursor:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
-    shape: Block
+    shape: Underline
 
     # Cursor blinking state
     #
@@ -404,7 +404,7 @@ cursor:
   #vi_mode_style: None
 
   # Cursor blinking interval in milliseconds.
-  blink_interval: 450
+  blink_interval: 250
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
