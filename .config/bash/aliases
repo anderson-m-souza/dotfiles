@@ -6,6 +6,16 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias diff='diff --color=auto'
 alias ip='ip --color=auto'
+alias less='less --use-color -DP11 -DE11 -DS9 -Dd10 -Ds6 -Du12'
+man() {
+    LESS_TERMCAP_md=$'\033[01;34m' \
+    LESS_TERMCAP_me=$'\033[00;00m' \
+    LESS_TERMCAP_us=$'\033[00;36m' \
+    LESS_TERMCAP_ue=$'\033[00;00m' \
+    LESS_TERMCAP_so=$'\033[01;33m' \
+    LESS_TERMCAP_se=$'\033[00;00m' \
+    command /usr/bin/man "$@"
+}
 
 # transmission daemon
 alias tsm='transmission-remote'
