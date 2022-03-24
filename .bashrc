@@ -21,7 +21,11 @@ bblue="\[\033[01;34m\]"
 bgreen="\[\033[01;32m\]"
 yellow="\[\033[00;33m\]"
 reset="\[\033[00;00m\]"
-PS1="${yellow}┌⎯⎯(${bgreen}\u@\h${yellow})⎯[${bblue}\w${yellow}]\n${yellow}└⎯${bgreen}\$${reset} "
+if [ "$TERM" = "linux" ]; then
+    PS1="${yellow}┌--(${bgreen}\u@\h${yellow})-[${bblue}\w${yellow}]\n${yellow}└-${bgreen}\$${reset} "
+else
+    PS1="${yellow}┌⎯⎯(${bgreen}\u@\h${yellow})⎯[${bblue}\w${yellow}]\n${yellow}└⎯${bgreen}\$${reset} "
+fi
 PROMPT_COMMAND="export PROMPT_COMMAND=echo"
 alias clear="clear; export PROMPT_COMMAND='export PROMPT_COMMAND='echo''"
 
