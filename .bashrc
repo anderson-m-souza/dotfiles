@@ -17,14 +17,13 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # Prompt
-bblue="\[\033[01;34m\]"
-bgreen="\[\033[01;32m\]"
-yellow="\[\033[00;33m\]"
+blue="\[\033[00;34m\]"
 reset="\[\033[00;00m\]"
+gray="\[\033[02;37m\]"
 if [ "$TERM" = "linux" ]; then
-    PS1="${yellow}┌--(${bgreen}\u@\h${yellow})-[${bblue}\w${yellow}]\n${yellow}└-${bgreen}\$${reset} "
+    PS1="${gray}┌--(${reset}\u@\h${gray})-[${blue}\w${gray}]\n${gray}└-${reset}\$ "
 else
-    PS1="${yellow}┌⎯⎯(${bgreen}\u@\h${yellow})⎯[${bblue}\w${yellow}]\n${yellow}└⎯${bgreen}\$${reset} "
+    PS1="${gray}┌⎯⎯(${reset}\u@\h${gray})⎯[${blue}\w${gray}]\n${gray}└⎯${reset}\$ "
 fi
 PROMPT_COMMAND="export PROMPT_COMMAND=echo"
 alias clear="clear; export PROMPT_COMMAND='export PROMPT_COMMAND='echo''"
@@ -32,4 +31,3 @@ alias clear="clear; export PROMPT_COMMAND='export PROMPT_COMMAND='echo''"
 if [ -f "$XDG_CONFIG_HOME/bash/aliases" ]; then
     . "$XDG_CONFIG_HOME/bash/aliases"
 fi
-
