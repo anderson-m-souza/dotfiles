@@ -136,30 +136,11 @@
 
 " MAPPINGS --------------------------------------------------------------- {{{
 
-    " Navigation between vim and tmux splits using Ctrl+HJKL keys
-    "https://www.codeography.com/2013/06/19/navigating-vim-and-tmux-splits
-    if exists('$TMUX')
-        function! TmuxOrSplitSwitch(wincmd, tmuxdir)
-            let previous_winnr = winnr()
-            silent! execute "wincmd " . a:wincmd
-            if previous_winnr == winnr()
-                call system("tmux select-pane -" . a:tmuxdir)
-                redraw!
-            endif
-        endfunction
-        let previous_title = substitute(system("tmux display-message -p '#{pane_title}'"), '\n', '', '')
-        let &t_ti = "\<Esc>]2;vim\<Esc>\\" . &t_ti
-        let &t_te = "\<Esc>]2;". previous_title . "\<Esc>\\" . &t_te
-        nnoremap <silent> <C-h> :call TmuxOrSplitSwitch('h', 'L')<cr>
-        nnoremap <silent> <C-j> :call TmuxOrSplitSwitch('j', 'D')<cr>
-        nnoremap <silent> <C-k> :call TmuxOrSplitSwitch('k', 'U')<cr>
-        nnoremap <silent> <C-l> :call TmuxOrSplitSwitch('l', 'R')<cr>
-    else
-        map <C-h> <C-w>h
-        map <C-j> <C-w>j
-        map <C-k> <C-w>k
-        map <C-l> <C-w>l
-    endif
+    " use ctrl+[hjkl] no navigate between splits
+    map <C-h> <C-w>h
+    map <C-j> <C-w>j
+    map <C-k> <C-w>k
+    map <C-l> <C-w>l
 
     " NERDTree toggle Ctrl+a
     nnoremap <C-a> :NERDTreeToggle<CR>
@@ -215,5 +196,9 @@
 
     " Configuration file for Conquer Of Completion
     source $XDG_CONFIG_HOME/vim/pack/coc/start/coc.nvimrc
+
+    " Change global configuration file path
+    let g:coc_config_home = '$XDG_CONFIG_HOME/vim/pack/coc'
+    let g:coc_data_home = '$XDG_DATA_HOME/vim/coc'
 
 " }}}
