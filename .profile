@@ -33,8 +33,6 @@ export LESSHISTFILE=-
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 # change ~/.python_history to $XDG_STATE_HOME/python/history
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc.py"
-# vim
-export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 # xinit
 export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
 # xserver
@@ -46,10 +44,20 @@ export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
 export PSQL_HISTORY="$XDG_STATE_HOME/psql_history"
 export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
 export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
+# asdf
+export ASDF_CONFIG_FILE="$XDG_CONFIG_HOME/asdf/asdfrc"
+export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
+export ASDF_DEFAULT_TOOL_VERSIONS_FILENAME="$XDG_CONFIG_HOME/asdf/tool-versions"
+export ASDF_PYTHON_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/pip/default-python-packages"
+export ASDF_NPM_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/npm/default-npm-packages"
+# npm
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+# vagrant
+export VAGRANT_HOME="$XDG_DATA_HOME/vagrant"
+export VAGRANT_ALIAS_FILE="$XDG_DATA_HOME/vagrant/aliases"
 
-
-# set vim as default text editor
-export EDITOR='vim'
+# set neovim as default text editor
+export EDITOR='nvim'
 
 
 # if running bash
@@ -71,9 +79,6 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-
-# asdf
-. "/opt/asdf-vm/asdf.sh"
 
 # startx hidding messages
 [[ $(fgconsole 2>/dev/null) == 1 ]] && startx -- vt1 &> /dev/null

@@ -45,3 +45,12 @@ alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
 # startx doesn't respect XINITRC and XSERVERRC yet
 alias startx='startx "$XINITRC" -- "$XSERVERRC" vt1'
+
+nvim() {
+    unset VIMINIT
+    command /bin/nvim "$@"
+}
+vim() {
+    export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+    command /bin/vim "$@"
+}

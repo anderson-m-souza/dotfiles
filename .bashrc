@@ -31,3 +31,6 @@ alias clear="clear; export PROMPT_COMMAND='export PROMPT_COMMAND='echo''"
 if [ -f "$XDG_CONFIG_HOME/bash/aliases" ]; then
     . "$XDG_CONFIG_HOME/bash/aliases"
 fi
+
+# asdf setup
+. /opt/asdf-vm/asdf.sh
