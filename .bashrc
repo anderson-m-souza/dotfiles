@@ -24,3 +24,4 @@ fi
 
 # asdf setup
 . /opt/asdf-vm/asdf.sh
+. "/home/and/.local/share/rust/cargo/env"
