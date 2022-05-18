@@ -19,7 +19,6 @@ man() {
 
 # transmission daemon
 alias tsm='transmission-remote'
-alias tsm-watch='watch -t -n 3 transmission-remote -l'
 
 # dotfiles configuration
 alias config='/usr/bin/git --git-dir="$XDG_CONFIG_HOME/dotfiles" --work-tree=$HOME'
