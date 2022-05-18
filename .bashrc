@@ -16,17 +16,7 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-# Prompt
-blue="\[\033[00;34m\]"
-reset="\[\033[00;00m\]"
-gray="\[\033[02;37m\]"
-if [ "$TERM" = "linux" ]; then
-    PS1="${gray}┌--(${reset}\u@\h${gray})-[${blue}\w${gray}]\n${gray}└-${reset}\$ "
-else
-    PS1="${gray}┌⎯⎯(${reset}\u@\h${gray})⎯[${blue}\w${gray}]\n${gray}└⎯${reset}\$ "
-fi
-PROMPT_COMMAND="export PROMPT_COMMAND=echo"
-alias clear="clear; export PROMPT_COMMAND='export PROMPT_COMMAND='echo''"
+PS1='> '
 
 if [ -f "$XDG_CONFIG_HOME/bash/aliases" ]; then
     . "$XDG_CONFIG_HOME/bash/aliases"
