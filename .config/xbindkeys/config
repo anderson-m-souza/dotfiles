@@ -45,6 +45,10 @@
   Control+Mod4 + NoSymbol
 # XF86TouchpadToggle  
 
+## Print screen
+"screenshot.sh"
+  Print
+
 ## Increase master volume
 #"amixer -c 0 set Master 2%+"
 #  XF86AudioRaiseVolume 
