@@ -37,5 +37,6 @@ xbindkeys -f $XDG_CONFIG_HOME/xbindkeys/config &
 xbacklight -set 16 -time 1000 -steps 100 &
 dunst &
 xsetroot -name " " &
+sleep 10s && calendar.sh &
 exec dwmblocks &
 exec dwm
