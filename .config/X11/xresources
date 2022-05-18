@@ -30,5 +30,7 @@
 
 Nsxiv.bar.font: Terminus:size=14:style=bold
 Nsxiv.window.foreground: #fe8019
-Nsxiv.bar.foreground: #d79921
+Nsxiv.window.background: #000000
+Nsxiv.bar.foreground: #ebdbb2
+Nsxiv.bar.background: #000000
 Nsxiv.mark.foreground: #cc241d
