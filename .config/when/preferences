@@ -1,7 +1,7 @@
 future = 7
 past = 0
 calendar = ~/.config/when/calendar
-editor = vim
+editor = nvim
 header = 0
 calendar_today_style = bold,fgyellow
 items_today_style = bold,fgyellow
