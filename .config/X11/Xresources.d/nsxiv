@@ -1,0 +1,11 @@
+Nsxiv.bar.font: Terminus:size=14:style=bold
+
+! Start flavours
+! Base16 tx - nsxiv xresources color config
+! Anderson M Souza (https://github.com/anderson-m-souza)
+Nsxiv.window.background: #030505
+Nsxiv.bar.background:    #030505
+Nsxiv.window.foreground: #ff191b
+Nsxiv.bar.foreground:    #b9dac4
+Nsxiv.mark.foreground:   #ff191b
+! End flavours

@@ -1,0 +1,3 @@
+#include "Xresources.d/default"
+#include "Xresources.d/dwm"
+#include "Xresources.d/nsxiv"
