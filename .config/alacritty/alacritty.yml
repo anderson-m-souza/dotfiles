@@ -178,136 +178,44 @@ font:
   # it is recommended to set `use_thin_strokes` to `false`.
   #use_thin_strokes: true
 
-# If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: true
-
-# Colors (Gruvbox dark)
+# Start flavours
+# Base16 tx - alacritty color config
+# Anderson M Souza (https://github.com/anderson-m-souza)
 colors:
   # Default colors
   primary:
-    # hard contrast background - '#1d2021
-    background: &gruvbox_dark_bg '#1d2021'
-    foreground: '#ebdbb2'
+    background: '0x030505'
+    foreground: '0x9fccae'
 
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not
-    # present. If the bright foreground color is not set, or
-    # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
-    # color will be used.
-    dim_foreground: '#a89984'
-    bright_foreground: '#fbf1c7'
-
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor.
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
+  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: CellBackground
-    cursor: CellForeground
-
-  # Vi mode cursor colors
-  #
-  # Colors for the cursor when the vi mode is active.
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  vi_mode_cursor:
-    text: CellBackground
-    cursor: CellForeground
-
-  # Search colors
-  #
-  # Colors used for the search bar and match highlighting.
-  #search:
-    # Allowed values are CellForeground/CellBackground, which reference the
-    # affected cell, or hexadecimal colors like #ff00ff.
-    #matches:
-    #  foreground: '#000000'
-    #  background: '#ffffff'
-    #focused_match:
-    #  foreground: '#ffffff'
-    #  background: '#000000'
-
-    #bar:
-    #  background: '#c5c8c6'
-    #  foreground: '#1d1f21'
-
-  # Keyboard regex hints
-  #hints:
-    # First character in the hint label
-    #
-    # Allowed values are CellForeground/CellBackground, which reference the
-    # affected cell, or hexadecimal colors like #ff00ff.
-    #start:
-    #  foreground: '#1d1f21'
-    #  background: '#e9ff5e'
-
-    # All characters after the first one in the hint label
-    #
-    # Allowed values are CellForeground/CellBackground, which reference the
-    # affected cell, or hexadecimal colors like #ff00ff.
-    #end:
-    #  foreground: '#e9ff5e'
-    #  background: '#1d1f21'
-
-  # Line indicator
-  #
-  # Color used for the indicator displaying the position in history during
-  # search and vi mode.
-  #
-  # By default, these will use the opposing primary color.
-  #line_indicator:
-  #  foreground: None
-  #  background: None
-
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area.
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  selection:
-    text: CellBackground
-    background: CellForeground
+    text: '0x030505'
+    cursor: '0x9fccae'
 
   # Normal colors
   normal:
-    black:   *gruvbox_dark_bg
-    red:     '#cc241d'
-    green:   '#98971a'
-    yellow:  '#d79921'
-    blue:    '#458588'
-    magenta: '#b16286'
-    cyan:    '#689d6a'
-    white:   '#a89984'
+    black:   '0x030505'
+    red:     '0xff191b'
+    green:   '0x45fe7b'
+    yellow:  '0x45fe7b'
+    blue:    '0x1793d1'
+    magenta: '0x66fdff'
+    cyan:    '0x66fdff'
+    white:   '0x9fccae'
 
   # Bright colors
   bright:
-    black:   *gruvbox_dark_bg
-    red:     '#cc241d'       
-    green:   '#98971a'       
-    yellow:  '#d79921'       
-    blue:    '#458588'       
-    magenta: '#b16286'       
-    cyan:    '#689d6a'       
-    white:   '#a89984'       
+    black:   '0x2f4f4f'
+    red:     '0xff191b'
+    green:   '0x121e1e'
+    yellow:  '0x203636'
+    blue:    '0x85be98'
+    magenta: '0xb9dac4'
+    cyan:    '0x6c96c0'
+    white:   '0xd2e7d9'
 
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  dim:
-    black:   '#32302f'
-    red:     '#9d0006'
-    green:   '#79740e'
-    yellow:  '#b57614'
-    blue:    '#076678'
-    magenta: '#8f3f71'
-    cyan:    '#427b58'
-    white:   '#928374'
+draw_bold_text_with_bright_colors: false
+# End flavours
 
   # Indexed Colors
   #
