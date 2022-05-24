@@ -32,7 +32,7 @@ fi
 
 xset r rate 260 40 &
 unclutter --start-hidden --fork
-xwallpaper --focus $XDG_DATA_HOME/wallpapers/gruvbox-city.png &
+wallpaper.sh &
 xbindkeys -f $XDG_CONFIG_HOME/xbindkeys/config &
 xbacklight -set 16 -time 1000 -steps 100 &
 dunst &
