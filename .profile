@@ -60,6 +60,9 @@ export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
 # rust
 export RUSTUP_HOME="$XDG_DATA_HOME/rust/rustup"
 export CARGO_HOME="$XDG_DATA_HOME/rust/cargo"
+#lynx
+export LYNX_CFG="$XDG_CONFIG_HOME/lynx/lynx.cfg"
+export LYNX_LSS="$XDG_CONFIG_HOME/lynx/lynx.lss"
 
 # set neovim as default text editor
 export EDITOR='nvim'
