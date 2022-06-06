@@ -3,28 +3,28 @@
 ! Start flavours
 ! Base16 tx - default xresources color config
 ! Anderson M Souza (https://github.com/anderson-m-souza)
-*background:  #030505
+*background:  #000000
 *foreground:  #b9dac4
-*color0:  #030505
-*color8:  #2f4f4f
+*color0:  #000000
+*color8:  #3e6767
 *color1:  #ff191b
 *color9:  #ff191b
 *color2:  #45fe7b
 *color10: #45fe7b
-*color3:  #45fe7b
-*color11: #45fe7b
+*color3:  #ded785
+*color11: #ded785
 *color4:  #1793d1
 *color12: #1793d1
-*color5:  #66fdff
-*color13: #66fdff
+*color5:  #de858c
+*color13: #de858c
 *color6:  #66fdff
 *color14: #66fdff
 *color7:  #b9dac4
 *color15: #d2e7d9
-*color16: #ff191b
-*color17: #6c96c0
-*color18: #121e1e
-*color19: #203636
+*color16: #deab85
+*color17: #c0966c
+*color18: #192a2a
+*color19: #2f4f4f
 *color20: #85be98
 *color21: #b9dac4
 ! End flavours

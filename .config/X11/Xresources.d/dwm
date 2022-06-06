@@ -1,8 +1,8 @@
-dwm.font: Terminus:size=12:style=bold:antialias=true:autohint=true
-dwm.icons: siji:pixelsize=18
+dwm.font: Terminus:size=10:style=bold:antialias=true:autohint=true
+dwm.icons: siji:size=12
 dwm.dmenufont: Terminus:size=15:style=bold:antialias=true:autohint=true
 dwm.borderpx: 1
-dwm.snap: 32
+dwm.snap: 16
 dwm.showbar: 1
 dwm.topbar: 1
 dwm.nmaster: 1
@@ -12,10 +12,14 @@ dwm.mfact: 0.5
 ! Start flavours
 ! Base16 tx - dwm xresources color config
 ! Anderson M Souza (https://github.com/anderson-m-souza)
-dwm.normbgcolor:      #030505
-dwm.normbordercolor:  #203636
+dwm.normbgcolor:      #000000
+dwm.normbordercolor:  #2f4f4f
 dwm.normfgcolor:      #9fccae
-dwm.selfgcolor:       #030505
+dwm.selfgcolor:       #85be98
 dwm.selbordercolor:   #85be98
-dwm.selbgcolor:       #85be98
+dwm.selbgcolor:       #000000
+dwm.dnormbgcolor:     #000000
+dwm.dnormfgcolor:     #85be98
+dwm.dselbgcolor:      #192a2a
+dwm.dselfgcolor:      #45fe7b
 ! End flavours
